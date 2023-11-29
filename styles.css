@@ -1,32 +1,47 @@
 header {
    display: flex;
-   justify-content: space-between;
-   border-bottom: 2px solid #93B5C6;
-   background-color: teal;
+   flex-direction: column;
+   background-color: lightsteelblue;
    padding: 8px;
+}
+
+.logo-banner {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 }
 
 
 body {
    margin: 0;
    font-family: Helvetica, sans-serif;
+   background-color: lightsteelblue;
+}
+
+footer {
+   display: flex;
+   background-color: lightsteelblue;
+   justify-content: right;
 }
 
 nav {
+   grid-area: nav;
    text-align: center;
    justify-content: space-between;
-   margin: 14px;
+   margin: 10px;
 }
 
-nav a {
+nav li {
+   display: inline;
+}
+
+nav li a {
    text-decoration: none;
    text-transform: uppercase;
    font-weight: bold;
    font-size: larger;
-}
-
-img {
-   
+   background-color: lightgreen;
+   padding: 10px 20px;
 }
 
 a:hover {
@@ -36,9 +51,3 @@ a:hover {
 a:active {
    color: purple;
 }
-
-.center {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}  
